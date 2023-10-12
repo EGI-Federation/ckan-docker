@@ -31,7 +31,7 @@ services:
       - ckannet
     healthcheck:
       test: ['CMD', '/opt/status.sh']
-      start_period: 30s
+      start_period: 5s
       interval: 1m
       timeout: 5s
     depends_on:
