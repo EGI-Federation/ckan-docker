@@ -3,7 +3,7 @@
 if [ ! -f /var/www/html ]; then
     mkdir -p /var/www/html
 fi
-
+ 
 if [ -n "$DOMAIN" ] && [ "$DOMAIN" != "localhost" ]; then
 	certbot certonly \
 			--config-dir ${LETSENCRYPT_DIR} ${LETSENCRYPT_DRYRUN} \
@@ -26,4 +26,3 @@ if [ -n "$DOMAIN" ] && [ "$DOMAIN" != "localhost" ]; then
 		echo "Copied new certificate to /usr/share/nginx/certificates"
 	fi
 fi
- 

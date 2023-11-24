@@ -5,7 +5,7 @@ export EMAIL=${EMAIL}
 export SSL_CERT_OPTIONS=${SSL_CERT_OPTIONS}
 export LETSENCRYPT_DIR=${LETSENCRYPT_DIR}
 export LETSENCRYPT_DRYRUN=${LETSENCRYPT_DRYRUN}
- 
+
 # Ensure we have a folder for the certificates
 if [ ! -d /usr/share/nginx/certificates ]; then
     echo "Creating certificate folder"
